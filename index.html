@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game For </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="level-screen">
+    <h1>Snake Game for Hexens &#10084</h1>
+    <div>
+      <label for="level-select">Choose Level: </label>
+      <select id="level-select">
+        <option value="1">Level 1</option>
+        <option value="2">Level 2</option>
+        <option value="3">Level 3</option>
+        <option value="4">Level 4</option>
+      </select>
+      <button id="start-btn">Start Game</button>
+    </div>
+    <div id="last-result"></div>
+    <div id="record-result"></div>
+  </div>
+  <div id="game-screen" style="display:none;">
+    <div id="score">Score: 0</div>
+    <div id="level-display"></div>
+    <canvas id="game" width="400" height="400"></canvas>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html> 
